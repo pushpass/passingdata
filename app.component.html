@@ -1,0 +1,11 @@
+<div>ename:{{empdata.selectedname}}</div>
+<div>eage:{{empdata.selectedage}}</div>
+<div>esalary:{{empdata.selectedsalary}}</div>
+<data-component
+
+[ename]="emp.name"
+[eage]="emp.age"
+[esalary]="emp.salary"
+(sendRecord)="getrecord($event)"
+    
+*ngFor="let emp of employee"></data-component>
